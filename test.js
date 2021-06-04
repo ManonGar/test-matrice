@@ -1,18 +1,17 @@
 const operation = (n) => {
   if (n % 3 === 0 && n % 5 === 0) {
-    console.log("GarçonFille");
+    return "GarçonFille";
   } else if (n % 3 === 0) {
-    console.log("Garçon");
+    return "Garçon";
   } else if (n % 5 === 0) {
-    console.log("Fille");
+    return "Fille";
   } else {
-    console.log(n);
+    return n;
   }
 };
 
 const operationOnList = (list) => {
   list.forEach((n) => {
-    return operation(n);
+    console.log(operation(n));
   });
 };
-
